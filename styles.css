@@ -264,5 +264,68 @@ body::before:hover {
 .skills:hover {
   box-shadow: 0 0 15px #6a0dad;
 }
+body {
+  background-color: #0d0d0d;
+  font-family: 'Poppins', sans-serif;
+  color: white;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+.contact-section {
+  max-width: 700px;
+  margin: 100px auto;
+  padding: 20px;
+}
+
+h2 {
+  font-size: 32px;
+  margin-bottom: 30px;
+  font-family: 'Orbitron', sans-serif;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.form-row {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+
+input, textarea {
+  background-color: #1a1a1a;
+  border: none;
+  padding: 15px;
+  border-radius: 20px;
+  width: 100%;
+  color: white;
+  font-size: 16px;
+}
+
+textarea {
+  resize: none;
+}
+
+button {
+  background-color: red;
+  color: white;
+  border: none;
+  padding: 15px;
+  font-size: 16px;
+  border-radius: 30px;
+  cursor: pointer;
+  width: 200px;
+  align-self: center;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: darkred;
+}
 
 /* Dynamically add stars with JavaScript (to be implemented in script.js) */
