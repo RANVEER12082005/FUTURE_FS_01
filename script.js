@@ -29,3 +29,20 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 });
+document.getElementById('contact-form').addEventListener('submit', function(e) {
+  e.preventDefault();
+
+  // Get values (optional, you can use these to show summary or console log)
+  const name = this.from_name.value;
+  const email = this.email.value;
+  const message = this.message.value;
+
+  // You can log or use the values
+  console.log("Form submitted:", { name, email, message });
+
+  // Show confirmation message
+  alert('✅ Your message was captured (not sent anywhere).');
+
+  // Optionally reset the form
+  this.reset();
+});
