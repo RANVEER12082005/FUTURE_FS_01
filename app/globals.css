@@ -1,0 +1,28 @@
+@import "tailwindcss";
+
+html {
+  scroll-behavior: smooth;
+}
+
+@keyframes slide-up {
+  0% {
+    transform: translateY(110%) scale(0);
+    opacity: 0;
+  }
+  50% {
+    transform: translateY(-20%) scale(1.15);
+    opacity: 0.8;
+  }
+  100% {
+    transform: translateY(0) scale(1);
+    opacity: 1;
+  }
+}
+
+.animate-slide-up {
+  animation: slide-up 1s cubic-bezier(0.4, 0, 0.2, 1) forwards;
+}
+
+#description::placeholder {
+  line-height: 95px; /* Match textarea height (h-[100px]) */
+}
